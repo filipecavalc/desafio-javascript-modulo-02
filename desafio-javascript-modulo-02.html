@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <button onClick="gerarBotao()" style="width: 150px; height: 40px;">Gerar quadrado 100pxx100px</button>
+    <button onClick="gerarBotao()" style="width: 150px; height: 40px;">Gerar quadrado 100px x 100px</button>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
 
     <script>
 
@@ -40,11 +42,19 @@
         nomes.forEach(nome => {
             var itemLista = document.createElement('li');
             itemLista.innerHTML = nome;
-            lista.appendChild(itemLista)
+            lista.appendChild(itemLista);
         });
 
         var corpoSite = document.body;
         corpoSite.appendChild(lista);
+
+        function adicionar() {
+            var itemLista = document.createElement('li');
+            var inputNome = document.getElementsByName('nome')[0];
+            itemLista.innerHTML = inputNome.value;
+            inputNome.value = "";
+            lista.appendChild(itemLista);
+        }
     </script>
 </body>
 
