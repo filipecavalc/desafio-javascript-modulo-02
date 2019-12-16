@@ -1,5 +1,11 @@
 # desafio-javascript-modulo-02
 
+## link do resultado: 
+https://desafio-javascript-modulo-02.firebaseapp.com/
+
+## Exemplo funcionando
+![Alt Text](gif-desefio-javascript-modulo-02.gif)
+
 ## Exercícios: Módulo 02
 ### 1º exercício
 Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
